@@ -1,7 +1,9 @@
 module.exports = ({ env }) => ({
-  auth: {
-    secret: env("ADMIN_JWT_SECRET"),
+  serveAdminPanel: false,
+  rateLimit: {
+    enabled: false,
   },
+  autoOpen: false,
   apiToken: {
     salt: env("API_TOKEN_SALT"),
   },
